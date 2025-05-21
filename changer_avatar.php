@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     }
 
                     // Mettre à jour dans la BDD
-                    $update = $bdd->prepare('UPDATE utilisateurs SET avatar = ? WHERE id = ?');
+                    $update = $pdo->prepare('UPDATE utilisateurs SET avatar = ? WHERE id = ?');
                     $update->execute([$new_filename, $user['id']]);
 
                     header('Location: membre.php?upload=success');

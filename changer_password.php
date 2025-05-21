@@ -21,7 +21,7 @@
         $new_password_retype = htmlspecialchars($_POST['new_password_retype']);
 
         // On récupère les infos de l'utilisateur
-        $check_password  = $bdd->prepare('SELECT password FROM utilisateurs WHERE token = :token');
+        $check_password  = $pdo->prepare('SELECT password FROM utilisateurs WHERE token = :token');
         $check_password->execute(array(
             "token" => $_SESSION['user']
         ));
