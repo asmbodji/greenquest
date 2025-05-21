@@ -37,7 +37,7 @@
                 $cost = ['cost' => 12];
                 $new_password = password_hash($new_password, PASSWORD_BCRYPT, $cost);
                 // On met à jour la table utiisateurs
-                $update = $bdd->prepare('UPDATE utilisateurs SET password = :password WHERE token = :token');
+                $update = $pdo->prepare('UPDATE utilisateurs SET password = :password WHERE token = :token');
                 $update->execute(array(
                     "password" => $new_password,
                     "token" => $_SESSION['user']
