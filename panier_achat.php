@@ -2,7 +2,7 @@
 session_start();
 
 // Connexion à la base de données
-$pdo = new PDO('mysql:host=localhost;dbname=panier;charset=utf8', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=web;charset=utf8', 'root', '');
 
 // Récupération des produits
 $stmt = $pdo->query("SELECT * FROM products");
