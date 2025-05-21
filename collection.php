@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require_once 'config.php';
 // Vérifier si l'utilisateur est connecté
 if (!isset($_SESSION['user'])) {
     header('Location: connexion.php');
@@ -8,7 +8,9 @@ if (!isset($_SESSION['user'])) {
 }
 
 // Connexion à la base de données
-$pdo = new PDO('mysql:host=localhost;dbname=collect;charset=utf8', 'root', '');
+
+
+
 
 // Récupérer les figurines disponibles
 $stmt = $pdo->query("SELECT * FROM collection");
