@@ -2,7 +2,7 @@
 session_start();
 
 // Connexion à la base de données
-$pdo = new PDO('mysql:host=localhost;dbname=web;charset=utf8', 'root', '');
+require_once 'config.php';
 
 // Récupération des produits
 $stmt = $pdo->query("SELECT * FROM products");
