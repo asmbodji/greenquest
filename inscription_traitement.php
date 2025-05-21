@@ -11,7 +11,7 @@
         $password_retype = htmlspecialchars($_POST['password_retype']);
 
         // On vérifie si l'utilisateur existe
-        $check = $bdd->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
+        $check = $pdo->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();

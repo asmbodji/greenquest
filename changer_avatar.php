@@ -7,7 +7,7 @@ if (!isset($_SESSION['user'])) {
     exit();
 }
 
-$req = $bdd->prepare('SELECT * FROM utilisateurs WHERE token = ?');
+$req = $pdo->prepare('SELECT * FROM utilisateurs WHERE token = ?');
 $req->execute([$_SESSION['user']]);
 $user = $req->fetch();
 
