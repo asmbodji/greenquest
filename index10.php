@@ -1,18 +1,18 @@
 <!--<!DOCTYPE html>-->
 <html lang="fr">
 <head>
- 
-<?php
+ <?php
 session_start();
 require_once 'config.php';
 
 $user = null;
 if (isset($_SESSION['user'])) {
-    $req = $bdd->prepare('SELECT * FROM utilisateurs WHERE token = ?');
+    $req = $pdo->prepare('SELECT * FROM utilisateurs WHERE token = ?');
     $req->execute([$_SESSION['user']]);
     $user = $req->fetch();
 }
 ?>
+
 
 
     <meta charset="UTF-8">

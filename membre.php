@@ -2,17 +2,14 @@
 session_start();
 require_once 'config.php';
 
-if (!isset($_SESSION['user'])) {
-    header('Location: index10.php');
-    exit();
+$user = null;
+if (isset($_SESSION['user'])) {
+    $req = $pdo->prepare('SELECT * FROM utilisateurs WHERE token = ?');
+    $req->execute([$_SESSION['user']]);
+    $user = $req->fetch();
 }
-
-$req = $bdd->prepare('SELECT * FROM utilisateurs WHERE token = ?');
-$req->execute([$_SESSION['user']]);
-$user = $req->fetch();
-
-
 ?>
+
 
 
 
