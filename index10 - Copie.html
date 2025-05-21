@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylex.css">
+    <script src="https://kit.fontawesome.com/5b1d85b886.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>GreenQuest</title>
+    <link rel="icon" type="icon/jpg" href="logo.jpg">
+</head>
+<body>
+    <!-- ☁️ Nuages -->
+<div class="nuage nuage1"></div>
+<div class="nuage nuage2"></div>
+
+<!-- 🦋 Papillons -->
+<div class="papillon pap1"></div>
+<div class="papillon pap2"></div>
+
+<!-- 🌳 Arbres animés (ex. feuilles qui bougent) -->
+<div class="arbre"></div>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="GreenQuest Logo" class="logo-img"> 
+            <span>Green</span>Quest
+        </a>
+    
+        <div class="menutoggle" onclick="toggleMenu();"></div>
+    
+        <ul class="navbar">
+            <li><a href="#gammes" onclick="toggleMenu();">Accueil</a></li>
+            <li><a href="nouveau.html" onclick="toggleMenu();">Ma collection</a></li>
+            <li><a href="page1.html" onclick="toggleMenu();">Articles</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Boutique</a></li>
+            <li><a href="index.php" onclick="toggleMenu();">Connexion/Inscription</a></li>
+           
+            <div id="notification-container"></div>
+
+            <!-- Icône de recherche -->
+            
+            </li>
+        </ul>
+    </header>
+    
+    <section class="gammes" id="gammes">
+        <div class="contenu">
+            <!-- Boîte avec effet Flip -->
+            <div class="box">
+                <div class="box-face box-front">
+                    <h2>Bienvenue chez <span class="type">GreenQuest</span></h2>
+                    <p>Veuillez découvrir notre collection de figurines rien que pour vous.</p>
+                </div>
+                <div class="box-face box-back">
+                    <h2>GreenQuest est un jeu interactif,</h2>
+                    <p>dans le cadre de notre projet rhizome. L'objectif est de s'amuser tous en participant a la preservation de l'environnement</p>
+                </div>
+            </div>
+            <!-- À mettre dans le <body> de ta page -->
+<div id="mascotte" onclick="parler()">
+    <img src="lion.png" alt="Mascotte" />
+    <div id="bulle">Clique sur moi pour un conseil ! 🌿</div>
+  </div>
+  
+            <!-- Boutons d'action -->
+            <a href="#More"><button class="green-btn">Les articles pour vous <i class="fa-solid fa-rectangle-vertical-history"></i></button></a>
+            <a href="#more"><button class="green-btn">Nos figurines <i class="fa-solid fa-rectangle-vertical-history"></i></button></a>
+            <a href="#micro"><button class="blue-btn">Notre boutique <i class="fa-duotone fa-solid fa-shop-lock"></i></button></a>
+
+        </div>
+    </section>
+    
+        
+    </section>
+    <h2 class="titre-text">NOTRE <span>COLLECTIONS</span> .</h2>
+                <p>
+                    </p>
+    <section class="nouveautes" id="nouveautes">
+        <div class="raw">
+            <div class="col50">
+                
+                
+            </div>
+            <div class="col50">
+                <div class="img">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="More" id="More">
+        <div class="titre">
+            <h2 class="titre-text"><span>Figur</span>ines</h2>
+            <p>Décrouvez nos figurines. A vous de choisir celui qui est fait pour vous, I guess 😉</p>
+        </div>
+        <div class="produits">
+            <div class="produit-box">
+                <span class="prix">534€</span>
+                <div class="produit-image">
+                    <img src="./dino.png" alt="Iphone SE 2022">
+                </div>
+                <div class="produit-text">
+                    <h3>Dino</h3>
+                    <button class="ajouter-btn">Acheter</button>
+                </div>
+            </div>
+        
+            <div class="produit-box">
+                <span class="prix">763€</span>
+                <div class="produit-image">
+                    <img src="./lion.png" alt="Iphone 13">
+                </div>
+                <div class="produit-text">
+                    <h3>Lion</h3>
+                    <button class="ajouter-btn">Acheter</button>
+                </div>
+            </div>
+            <div class="produit-box">
+                <span class="prix">763€</span>
+                <div class="produit-image">
+                    <img src="./rese.png" alt="Iphone 13">
+                </div>
+                <div class="produit-text">
+                    <h3>Thirex</h3>
+                    <button class="ajouter-btn">Acheter</button>
+                </div>
+            </div>
+            <div class="produit-box">
+                <span class="prix">763€</span>
+                <div class="produit-image">
+                    <img src="./thirex.png" alt="Iphone 13">
+                </div>
+                <div class="produit-text">
+                    <h3>Thirex</h3>
+                    <button class="ajouter-btn">Acheter</button>
+                </div>
+            </div>
+        
+            <div class="produit-box">
+                <span class="prix">500€</span>
+                <div class="produit-image">
+                    <img src="./hibou.png" alt="Rhino figurine">
+                </div>
+                <div class="produit-text">
+                    <h3>Hibou</h3>
+                    <button class="ajouter-btn">Acheter</button>
+                </div>
+            </div>
+        
+            <div class="produit-box">
+                <span class="prix">500€</span>
+                <div class="produit-image">
+                    <img src="./fallguy.png" alt="Rhino figurine">
+                </div>
+                <div class="produit-text">
+                    <h3>?? 😁</h3>  
+                    <button class="ajouter-btn">Acheter</button>
+                </div>
+            </div>
+        
+            <!-- Ajoute les autres cartes ici avec le même modèle -->
+        </div>
+        
+        
+        <div class="titre">
+           <a href="page1.html"> <button class="btn3"> Voir plus <i class="fa-solid fa-caret-down"></i></button></a>
+        </div>
+    <section class="articles" id="articles">
+    <div class="titre">
+        <h2 class="titre-text">Nos <span>Articles</span></h2>
+        <p>Découvrez les héros de GreenQuest : chaque figurine possède ses propres énigmes et pouvoirs uniques.</p>
+    </div>
+    <div class="articles-grid">
+        <div class="article-card">
+            <img src="./dino.png" alt="Dino" class="article-img">
+            <h3 class="article-nom">Dino</h3>
+            <p class="article-prix">534€</p>
+            <p class="article-desc">Un petit curieux prêt à affronter les énigmes les plus rusées !</p>
+            <button class="acheter-btn">Voir</button>
+        </div>
+
+        <div class="article-card">
+            <img src="./lion.png" alt="Lion" class="article-img">
+            <h3 class="article-nom">Lion</h3>
+            <p class="article-prix">763€</p>
+            <p class="article-desc">Le roi des énigmes qui encourage la coopération et le courage.</p>
+            <button class="acheter-btn">Voir</button>
+        </div>
+        <div class="article-card">
+            <img src="./lion.png" alt="Lion" class="article-img">
+            <h3 class="article-nom">Lion</h3>
+            <p class="article-prix">763€</p>
+            <p class="article-desc">Le roi des énigmes qui encourage la coopération et le courage.</p>
+            <button class="acheter-btn">Voir</button>
+        </div>
+
+        <div class="article-card">
+            <img src="./hibou.png" alt="Rhino" class="article-img">
+            <h3 class="article-nom">Rhino</h3>
+            <p class="article-prix">500€</p>
+            <p class="article-desc">Un gardien silencieux des secrets anciens.</p>
+            <button class="acheter-btn">Voir</button>
+        </div>
+
+        <div class="article-card">
+            <img src="./thirex.png" alt="Thirex" class="article-img">
+            <h3 class="article-nom">Thirex</h3>
+            <p class="article-prix">763€</p>
+            <p class="article-desc">Le sage qui révèle les énigmes les plus profondes de Rhizome.</p>
+            <button class="acheter-btn">Voir</button>
+        </div>
+    </div>
+    <section class="ecosystem" id="ecosystem">
+        <h2 class="titre-text">L' <span>Écosystème</span> de GreenQuest</h2>
+        <div class="eco-container">
+            <div class="eco-text">
+                <p>
+                    Dans GreenQuest, chaque figurine connectée révèle un aspect unique de notre écosystème. 
+                    Les joueurs explorent des environnements vivants, résolvent des énigmes écologiques et restaurent la nature.
+                    Le socle interactif capte l’identité de la figurine et déclenche des mini-jeux éducatifs.
+                </p>
+                <p>
+                    De la régénération d’une forêt à la purification d’un lac, chaque action a un impact. Apprends, joue, et sauve la planète une énigme à la fois.
+                </p>
+                <button class="decouvrir-btn">Découvrir les mini-jeux</button>
+            </div>
+            <div class="eco-image">
+                <img src="./green.jpg" alt="Écosystème de Rhizome">
+            </div>
+        </div>
+    </section>
+    
+    <section class="rhizome-section" id="rhizome-experiences">
+        <div class="rhizome-header">
+            <h2 class="rhizome-title"><span>Explorez </span>l'univers de GreenQuest</h2>
+            <p class="rhizome-description">
+                GreenQuest propose une collection de mini-jeux écologiques et immersifs, où chaque figurine active un nouveau défi pour protéger la planète.
+            </p>
+        </div>
+    
+        <div class="rhizome-grid">
+            <div class="rhizome-card">
+                <div class="rhizome-img">
+                    <img src="./netoyer.png" alt="Nettoyer la rivière">
+                </div>
+                <div class="rhizome-text">
+                    <h3>Nettoyer la rivière</h3>
+                    <p>Éliminez les déchets et purifiez l’eau pour sauver les poissons !</p>
+                </div>
+            </div>
+    
+            <div class="rhizome-card">
+                <div class="rhizome-img">
+                    <img src="./planter.jpg" alt="Reboiser la forêt">
+                </div>
+                <div class="rhizome-text">
+                    <h3>Reboiser la forêt</h3>
+                    <p>Plantez des arbres avec votre figurine pour redonner vie à la nature.</p>
+                </div>
+            </div>
+    
+            <div class="rhizome-card">
+                <div class="rhizome-img">
+                    <img src="./sauver.jpg" alt="Sauver les abeilles">
+                </div>
+                <div class="rhizome-text">
+                    <h3>Sauver les abeilles</h3>
+                    <p>Protégez les ruches et assurez la pollinisation des plantes.</p>
+                </div>
+            </div>
+    
+            <div class="rhizome-card">
+                <div class="rhizome-img">
+                    <img src="./ocean.png" alt="Océan propre">
+                </div>
+                <div class="rhizome-text">
+                    <h3>Océan propre</h3>
+                    <p>Ramassez les plastiques et sauvez les animaux marins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="rhizome-access" id="jouer">
+        <div class="rhizome-header black">
+            <h2 class="rhizome-title">Jouer à <span>GreenQuest</span></h2>
+            <p class="rhizome-description">
+                Prêt à vivre l’aventure écologique ? Téléchargez le jeu ou jouez directement en ligne !
+            </p>
+        </div>
+    
+        <div class="rhizome-access-grid">
+            <div class="rhizome-access-box">
+                <div class="access-img">
+                    <img src="./download.png" alt="Télécharger le jeu">
+                </div>
+                <div class="access-text">
+                    <h3>Version PC / Mac</h3>
+                    <p>Téléchargez la version bureau pour une expérience complète avec le socle et les figurines.</p>
+                    <a href="#" class="rhizome-btn">Télécharger</a>
+                </div>
+            </div>
+    
+            <div class="rhizome-access-box">
+                <div class="access-img">
+                    <img src="./browser.png" alt="Jouer en ligne">
+                </div>
+                <div class="access-text">
+                    <h3>Jouer en ligne</h3>
+                    <p>Accédez à GreenQuest depuis votre navigateur, sans installation.</p>
+                    <a href="#" class="rhizome-btn">Jouer maintenant</a>
+                </div>
+            </div>
+    
+            <div class="rhizome-access-box">
+                <div class="access-img">
+                    <img src="./appstore.png" alt="Mobile version">
+                </div>
+                <div class="access-text">
+                    <h3>App mobile (bientôt)</h3>
+                    <p>Disponible prochainement sur iOS et Android. Restez connectés !</p>
+                    <a href="#" class="rhizome-btn disabled">À venir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+    <!-- Section Contact Rhizome -->
+    <section id="contact" style="background: #f0fdf4; padding: 60px 20px; position: relative;">
+        <div style="max-width: 1000px; margin: auto; text-align: center;">
+          <h2 style="font-size: 2.8rem; color: #2e7d32;">Contactez-nous</h2>
+          <p style="color: #444; margin-bottom: 40px;">Une question, une suggestion ? L'équipe GreenQuest est là pour vous.</p>
+      
+          <!-- Message de retour -->
+          <div id="formMessage" style="display: none; margin-bottom: 20px; font-weight: bold;"></div>
+      
+          <!-- Formulaire -->
+          <form id="contactForm" style="display: grid; gap: 20px; max-width: 700px; margin: auto;">
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+              <input type="text" name="name" id="name" placeholder="Votre nom" required style="flex: 1 1 300px; padding: 15px; border: 2px solid #c8e6c9; border-radius: 12px; font-size: 16px;">
+              <input type="email" name="email" id="email" placeholder="Votre email" required style="flex: 1 1 300px; padding: 15px; border: 2px solid #c8e6c9; border-radius: 12px; font-size: 16px;">
+            </div>
+            <textarea name="message" id="message" placeholder="Votre message..." required style="padding: 20px; border: 2px solid #c8e6c9; border-radius: 12px; min-height: 150px; font-size: 16px;"></textarea>
+            <button type="submit" style="background-color: #4CAF50; color: white; border: none; padding: 15px 30px; border-radius: 30px; font-size: 16px; cursor: pointer; transition: background 0.3s ease;">📬 Envoyer</button>
+          </form>
+        </div>
+      
+        <!-- Lottie deco -->
+        <div style="position: absolute; bottom: 0; right: 0; z-index: 0; opacity: 0.1;">
+          <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_HpFqiS.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+      </section>
+      
+      <!-- Lottie CDN -->
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      
+  
+  <!-- Lottie CDN -->
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Description -->
+      <div class="footer-section">
+        <h3>Rhizome</h3>
+        <p>Rhizome est un projet écologique et ludique, visant à sensibiliser petits et grands à la préservation de l’environnement à travers des jeux interactifs et des expériences immersives.</p>
+      </div>
+  
+      <!-- Partenaires -->
+      <div class="footer-section">
+        <h3>Nos partenaires</h3>
+        <ul>
+          <li>WWF</li>
+          <li>Greenpeace</li>
+          <li>Unreal Earth</li>
+        </ul>
+      </div>
+  
+      <!-- Plateformes -->
+      <div class="footer-section">
+        <h3>Disponible sur</h3>
+        <div class="platforms">
+          <img src="steam.png" alt="Steam" />
+          <img src="epic.png" alt="Epic Games" />
+          <img src="playstore.svg" alt="Play Store" />
+        </div>
+      </div>
+  
+      <!-- QR Code -->
+      <div class="footer-section">
+        <h3>QR Code</h3>
+        <img src="qr.png" alt="QR Rhizome" class="qr-code" />
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 <a href="#">Amadou Sow Mbodji</a> — Tous droits réservés</p>
+    </div>
+  </footer>
+  
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header=document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            const toggleMenu=document.querySelector('.menutoggle');
+            const navbar=document.querySelector('navbar');
+            menutoggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+
+             const titreSpans = document.querySelectorAll('h2 span');
+            window.addEventListener('load', () => {
+                
+                const TL = gsap.timeline({paused: true});
+
+                TL.staggerFrom(titreSpans, 1, {top: -50, opacity: 0, ease: "power2.out" }, 0.3)
+                TL.play();
+            })
+    </script>
+    <script src="script1.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".ajouter-btn");
+            const notificationContainer = document.getElementById("notification-container");
+        
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const produitBox = button.closest(".produit-box");
+                    const imageSrc = produitBox.querySelector("img").src;
+                    const produitNom = produitBox.querySelector("h3").textContent;
+        
+                    // Créer la notification
+                    const notification = document.createElement("div");
+                    notification.classList.add("notification");
+                    notification.innerHTML = `
+                        <img src="${imageSrc}" alt="Produit">
+                        <p>${produitNom} a été ajouté !</p>
+                    `;
+        
+                    notificationContainer.appendChild(notification);
+        
+                    // Supprimer la notification après 3 secondes
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 3000);
+                });
+            });
+        });
+        </script>
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function (e) {
+              e.preventDefault(); // Empêche l'envoi normal
+            
+              const name = document.getElementById("name").value.trim();
+              const email = document.getElementById("email").value.trim();
+              const message = document.getElementById("message").value.trim();
+              const formMessage = document.getElementById("formMessage");
+            
+              // Vérification des champs
+              if (name === "" || email === "" || message === "") {
+                formMessage.style.display = "block";
+                formMessage.style.color = "#d32f2f";
+                formMessage.innerText = "⚠️ Tous les champs doivent être remplis.";
+                return;
+              }
+            
+              // Vérification de l'email
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!emailRegex.test(email)) {
+                formMessage.style.display = "block";
+                formMessage.style.color = "#f57c00";
+                formMessage.innerText = "📧 Adresse email invalide.";
+                return;
+              }
+            
+              // Si tout est ok
+              formMessage.style.display = "block";
+              formMessage.style.color = "#2e7d32";
+              formMessage.innerText = "✅ Message envoyé avec succès !";
+            
+              // Réinitialisation du formulaire
+              document.getElementById("contactForm").reset();
+            
+              // Optionnel : faire disparaître le message après 4 sec
+              setTimeout(() => {
+                formMessage.style.display = "none";
+              }, 4000);
+            });
+            </script>
+            <script>
+                const conseils = [
+                  "Pense à éteindre les lumières inutiles 💡",
+                  "Recycler, c'est protéger la planète ♻️",
+                  "Plante un arbre, c’est un geste fort 🌳",
+                  "L’eau est précieuse, ne la gaspille pas 💧",
+                  "Privilégie les transports doux 🚲",
+                  "Un geste par jour pour la planète 🌍"
+                ];
+              
+                function parler() {
+                  const bulle = document.getElementById("bulle");
+                  const random = conseils[Math.floor(Math.random() * conseils.length)];
+                  bulle.innerText = random;
+                  bulle.style.display = "block";
+              
+                  clearTimeout(window.mascoTimeout);
+                  window.mascoTimeout = setTimeout(() => {
+                    bulle.style.display = "none";
+                  }, 4000);
+                }
+              </script>
+    
+</body>
+</html>
