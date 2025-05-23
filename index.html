@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="style4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="style5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="style-switcher.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 </head>
 <body>
@@ -28,7 +33,7 @@
         <ul class="nav">
             <li><a href="#home" class="active"><i class="fa fa-home"></i>Accueil</a></li>
             <li><a href="#about"><i class="fa fa-user"></i>A Propos</a></li>
-            <li><a href="#service"><i class="fa fa-list"></i>Services</a></li>
+            <li><a href="#service"><i class="fa fa-list"></i>Compétences</a></li>
             <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
             <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
 
@@ -41,7 +46,8 @@
                 <div class="home-info">
                     <h3 class="hello">Bonjour, mon nom est <span class="name">Amadou Sow Mbodji</span></h3>
                     <h3 class="mon-domaine">Je suis un <span class="typing">Technicien Informatique industrielle et vision industrielle.</span></h3>
-                    <p>Futur Ingénieur en informatique motivé, autonome et prêt à contribuer à votre structure grâce à mon expérience en développement web, réseau et traitement d’images etc. Je suis persuadé que je serais un élément moteur dans votre entreprise.
+                    <p>🎓 Étudiant en Master Informatique, motivé, autonome et polyvalent, je suis prêt à mettre mes compétences en développement web, réseaux, et vision industrielle au service de votre entreprise.
+                        💡 Fort de plusieurs projets techniques et d’une formation solide, je suis convaincu de pouvoir être un atout moteur dans vos équipes.
                         
                         </p>
                     <a href="#contact" class="btn engagez-moi">Engagez Moi</a>
@@ -53,7 +59,10 @@
         </div>
      </section>
 
-
+     <section id="about" data-aos="fade-right" data-aos-duration="1000">
+        ...
+    </section>
+    
 
 
         <section class="about section" id="about">
@@ -67,9 +76,8 @@
                     <div class="about-content padd-15">
                         <div class="row">
                             <div class="about-text padd-15">
-                                <h3>Je suis Amadou Sow Mbodji, <span>un Technicien Informatique industrielle et vision industrielle</span></h3>
-                                <p>J'ai suivi ma formation au CFPT Sénégal/Japon, où j'ai opté pour l'enseignement technique. J'ai d'abord obtenu un brevet de technicien industriel en Électromécanique après 3 ans de formation, suivi d'un BTS en Informatique industrielle et réseaux. Ce parcours m'a donné une solide expérience pratique, notamment en mécatronique. J'ai 
-                                    récemment obtenu une Licence Professionnelle en Vision pour la robotique industrielle à l'Université de Nîmes, je suis à la recherche d'une alternance pour poursuivre un master</p>
+                                <h3>Je suis Amadou Sow Mbodji, <span> passionné par l’informatique et le développement web, l'IA. 💻📱</span></h3>
+                                <p>J’ai suivi une formation technique au CFPT Sénégal/Japon, où j’ai obtenu un BTI en électromécanique puis un BTS en informatique industrielle et réseaux. J’ai ensuite validé deux licences professionnelles : l'une en administration et sécurité des réseaux, et l'autre en vision pour la robotique industrielle à l’Université de Nîmes. Actuellement en Master 1 Technologies de l’Information,  Produits et Services Multimédia à l’Université de Franche-Comté, je suis à la recherche d’une alternance à partir de septembre dans le cadre de mon entrée en Master 2, parcours Technologies et Développement Multimédia avec une spécialisation en Intelligence Artificielle.</p>
                             </div>
                         </div>
                         <div class="row">
@@ -79,7 +87,7 @@
                                         <p>Date de naissance: <span>12 janvier 1998</span></p>
                                     </div>
                                     <div class="info-item padd-15">
-                                        <p>Age: <span>25</span></p>
+                                        <p>Age: <span>26</span></p>
                                     </div>
                                     <div class="info-item padd-15">
                                         <p>Email: <span>asmbodj@hotmail.com</span></p>
@@ -91,12 +99,12 @@
                                         <p>Num tel: <span>0758864201</span></p>
                                     </div>
                                     <div class="info-item padd-15">
-                                        <p>Ville: <span>Nimes</span></p>
+                                        <p>Ville: <span>Belfort</span></p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="buttons padd-15">
-                                        <a href="CVi.pdf" class="btn">Télécharger CV</a>
+                                        <a href="CURRICULUMASMb.pdf" class="btn">Télécharger CV</a>
                                         <a href="#contact" class="btn engagez moi">engagez-moi</a>
                                     </div>
                                 </div>
@@ -125,6 +133,13 @@
                                         </div>
                                     </div>
                                     <div class="skill-item padd-15">
+                                        <h5>Flutter & Swift</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 75%;"></div>
+                                            <div class="skill-percent">75%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
                                         <h5>PHP & MYSQL</h5>
                                         <div class="progress">
                                             <div class="progress-in" style="width: 75%;"></div>
@@ -141,105 +156,115 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="education padd-15">
-                                <h3 class="title">Formation</h3>
-                                <div class="row">
-                                    <div class="timeline-box padd-15">
-                                        <div class="timeline shadow-dark">
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2023 - 2024
-                                                </h3>
-                                                <h4 class="timeline-title">Licence Pro Vision pour la robotique industrielle </h4>
-                                                <p class="timeline-text">A l'Université de Nîmes</p>
-                                            </div>
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2022 - 2023
-                                                </h3>
-                                                <h4 class="timeline-title">Licence Pro Administration et Securite des reseaux</h4>
-                                                <p class="timeline-text">A l'Ecole Superieur Multinational de Telecom</p>
-                                            </div>
-                                            
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2020 - 2021
-                                                </h3>
-                                                <h4 class="timeline-title">1ère année bts en Informatique industriel et Réseau</h4>
-                                                <p class="timeline-text">Au Centre de Formation Professionnel et Technique Sénégal-Japon</p>
-                                            </div>
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2021 - 2022
-                                                </h3>
-                                                <h4 class="timeline-title">2ème année bts en Informatique industriel et Réseau</h4>
-                                                <p class="timeline-text">Au Centre de Formation Professionnel et Technique Sénégal-Japon</p>
-                                            </div>
-                                        </div>
+                        <!-- Logiciels maîtrisés -->
+
+
+                        <div class="formation-section padd-15">
+                            <h3 class="title">
+                                Formation
+                                <button id="toggle-formation" class="btn-formation-toggle">Afficher ▼</button>
+                            </h3>
+                            <div class="formation-content animated-collapse" id="formation-box">
+                                <div class="formation-card">
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2024 - 2025</h3>
+                                        <h4 class="timeline-title">Master 1 Technologie de l'information Produits & Services Multimédia</h4>
+                                        <p class="timeline-text">À l'Université de Marie & Louis Pasteur 🇫🇷</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="diplome padd-15">
-                                <h3 class="title">Diplôme</h3>
-                                <div class="row">
-                                    <div class="timeline-box padd-15">
-                                        <div class="timeline shadow-dark">
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2019 - 2020
-                                                </h3>
-                                                <h4 class="timeline-title">Brevet de Technicien industriel en Electromécanique : Mention Passable</h4>
-                                                <p class="timeline-text">Au Centre de Formation Professionnel et Technique Sénégal-Japon</p>
-                                            </div>
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2021 - 2022
-                                                </h3>
-                                                <h4 class="timeline-title">Brevet de Technicien Superieur en Informatique industriel et Réseau : Mention Assez Bien</h4>
-                                                <p class="timeline-text">Au Centre de Formation Professionnel et Technique Sénégal-Japon</p>
-                                            </div>
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2022 - 2023
-                                                </h3>
-                                                <h4 class="timeline-title">Licence Pro Administration & Sécurité des Réseaux : Mention Assez-Bien</h4>
-                                                <p class="timeline-text">A l'Ecole Supérieur Multinational de Télécom</p>
-                                            </div>
-                                            <div class="timeline-item">
-                                                <div class="circle-dot"></div>
-                                                <h3 class="timeline-date">
-                                                    <i class="fa fa-calendar"></i> 2023 - 2024
-                                                </h3>
-                                                <h4 class="timeline-title">Licence Pro Vision pour la robotique industrielle : Mention Bien</h4>
-                                                <p class="timeline-text">A l'Université de Nîmes</p>
-                                            </div>
-                                 
-                                                 
-
-
-                                        </div>
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2023 - 2024</h3>
+                                        <h4 class="timeline-title">Licence Pro Vision pour la robotique industrielle</h4>
+                                        <p class="timeline-text">À l'Université de Nîmes 🇫🇷</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2022 - 2023</h3>
+                                        <h4 class="timeline-title">Licence Pro Administration et Sécurité des réseaux</h4>
+                                        <p class="timeline-text">À l'École Supérieure Multinationale de Télécom 🇸🇳</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2020 - 2021</h3>
+                                        <h4 class="timeline-title">1ère année BTS en Informatique industrielle et Réseau</h4>
+                                        <p class="timeline-text">Au Centre de Formation Professionnel et Technique Sénégal-Japon 🇸🇳</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2022</h3>
+                                        <h4 class="timeline-title">2ème année BTS en Informatique industrielle et Réseau</h4>
+                                        <p class="timeline-text">Au Centre de Formation Professionnel et Technique Sénégal-Japon 🇸🇳</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        
+                        
+                        <div class="diplome-section padd-15">
+                            <h3 class="title">
+                                Diplôme
+                                <button id="toggle-diplome" class="btn-diplome-toggle">Afficher ▼</button>
+                            </h3>
+                            <div class="diplome-content animated-collapse" id="diplome-box">
+                                <div class="diplome-card">
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2019 - 2020</h3>
+                                        <h4 class="timeline-title">
+                                            Brevet de Technicien industrielle en Electromécanique
+                                            <span class="mention mention-passable">Mention Passable</span>
+                                        </h4>
+                                        <p class="timeline-text">Au Centre de Formation Professionnel et Technique Sénégal-Japon 🇸🇳</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2022</h3>
+                                        <h4 class="timeline-title">
+                                            Brevet de Technicien Supérieur en Informatique industrielle et Réseau
+                                            <span class="mention mention-assezbien">Mention Assez Bien</span>
+                                        </h4>
+                                        <p class="timeline-text">Au Centre de Formation Professionnel et Technique Sénégal-Japon 🇸🇳</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2022 - 2023</h3>
+                                        <h4 class="timeline-title">
+                                            Licence Pro Administration & Sécurité des Réseaux
+                                            <span class="mention mention-assezbien">Mention Assez Bien</span>
+                                        </h4>
+                                        <p class="timeline-text">À l'École Supérieure Multinationale de Télécom 🇸🇳</p>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2023 - 2024</h3>
+                                        <h4 class="timeline-title">
+                                            Licence Pro Vision pour la robotique industrielle
+                                            <span class="mention mention-bien">Mention Bien</span>
+                                        </h4>
+                                        <p class="timeline-text">À l'Université de Nîmes 🇫🇷</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            
+                            
+                        
+                            <!-- 🌍 Carte interactive -->
+                            <div class="padd-15">
+                                <h3 class="title">Localisation des Écoles</h3>
+                                <div id="map" style="height: 300px; width: 100%; margin-top: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);"></div>
+                            </div>
+                        </div>
+                        
         </section>
             
         <section class="service section" id="service">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
-                        <h2>Services</h2>
+                        <h2>Compétences</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -264,10 +289,28 @@
                     <div class="service-item">
                         <div class="service-item-inner">
                             <div class="icon">
+                                <i class="fa-brands fa-flutter"></i>
+                            </div>
+                            <h4>Développement mobile</h4>
+                            <p>Développement d'application mobile avec flutter.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-item-inner">
+                            <div class="icon">
                                 <i class="fa-solid fa-eye-low-vision"></i>
                             </div>
                             <h4>Machine Vision & Traitemenet d'images</h4>
                             <p>Controler au moyen de caméras associées a des traitement d'images adaptés.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa-brands fa-unity"></i>
+                            </div>
+                            <h4>Animation et Modélisation 3D</h4>
+                            <p>Animation et modélisation 3D avec Unity et 3ds Max pour la création d’environnements et de personnages interactifs.</p>
                         </div>
                     </div>
                     <div class="service-item">
@@ -299,101 +342,202 @@
                     </div>
                 </div>
             </div>
+            <div class="software-skills padd-15">
+    <h4>Logiciels & OUTILS maîtrisés</h4>
+    <div class="software-logos">
+        <img src="images/logo/vscode.png" alt="VS Code" title="Visual Studio Code">
+        <img src="images/logo/pycharm.png" alt="PyCharm" title="PyCharm">
+        <img src="images/logo/android.png" alt="Android Studio" title="Android Studio">
+        <img src="images/logo/figma.png" alt="Figma" title="Figma">
+        <img src="images/logo/adobe.png" alt="Adobe XD" title="Adobe XD">
+        <img src="images/logo/github.png" alt="GitHub" title="Git & GitHub">
+        <img src="images/logo/unity.png" alt="Unity" title="Unity">
+        <img src="images/logo/wordpress.png" alt="WordPress" title="WordPress">
+        <img src="images/logo/canva.png" alt="Canva" title="canva">
+        <img src="images/logo/linux.png" alt="linux" title="Linux">
+        <img src="images/logo/bootstrap.png" alt="BootStrap" title="BootStrap">
+    </div>
+</div>
         </section>
 
-           <section class="portfolio section" id="portfolio">
+        <section class="portfolio section" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
                         <h2>Portfolio</h2>
                     </div>
                 </div>
+                <div class="row portfolio-items">
+                    <!-- Projet 1 -->
+                    <!-- Projet 1 -->
+<div class="portfolio-item">
+    <div class="portfolio-item-inner shadow-dark">
+        <div class="portfolio-img">
+            <img src="./im1.jpg" alt="Projet BTS">
+        </div>
+        <h3>Mon projet BTS : Réalisation d'un site web e-commerce pour une entreprise</h3>
+        <div class="portfolio-btn">
+            <button class="btn-see-more"
+                onclick="openPopup(this)"
+                data-image="./im1.jpg"
+                data-title="Mon projet BTS : Réalisation d'un site web e-commerce pour une entreprise"
+            >
+                Voir plus
+            </button>
+        </div>
+    </div>
+</div>
+<div class="portfolio-item">
+    <div class="portfolio-item-inner shadow-dark">
+        <div class="portfolio-img">
+            <img src="./imge.png" alt="Projet BTS">
+        </div>
+        <h3>Mon projet tuteuré en licence pro vri</h3>
+        <div class="portfolio-btn">
+            <button class="btn-see-more"
+                onclick="openPopup(this)"
+                data-image="./imge.png"
+                data-title="Description : Développement de système de métrologie basés sur Halcon"
+            >
+                Voir plus
+            </button>
+        </div>
+    </div>
+</div>
+<div class="portfolio-item">
+    <div class="portfolio-item-inner shadow-dark">
+        <div class="portfolio-img">
+            <img src="./rhiz.png" alt="Projet BTS">
+        </div>
+        <h3>Mon projet Master : GreenQuest, jeux interactifs (en cours)</h3>
+        <div class="portfolio-btn">
+            <button class="btn-see-more"
+                onclick="openPopup(this)"
+                data-image="./greenquest.gif"
+                data-title="Description : GreenQuest, jeux interactifs sur la protection de l'environnement (en cours)"
+            >
+                Voir plus
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Projet 2 -->
+<div class="portfolio-item">
+    <div class="portfolio-item-inner shadow-dark">
+        <div class="portfolio-img video">
+            <video controls>
+                <source src="./video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h3>Mon projet Master: Application mobile de prise de rendez-vous en ligne</h3>
+        <div class="portfolio-btn">
+            <button class="btn-see-more"
+                onclick="openPopup(this)"
+                data-image="./flex.png"
+                data-title="Mon projet Master: Application mobile de prise de rendez-vous en ligne"
+            >
+                Voir plus
+            </button>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </section>
+        
+        
+        </section>
+        
+           </section>
+
+           <section class="contact section" id="contact">
+            <div class="container">
                 <div class="row">
-                    <div class="portfolio-heading">
-                        <h2>Mon projet BTS: Réalisation d'un site web e-commerce pour une entreprise </h2>
+                    <div class="section-title padd-15">
+                        <h2>Contactez Moi</h2>
                     </div>
                 </div>
+                <h3 class="contact-title padd-15">Avez-vous des Questions ?</h3>
+                <h4 class="contact-sub-title padd-15">JE SUIS À VOTRE SERVICE</h4>
+        
                 <div class="row">
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                               <img src="./im1.jpg"     
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Appelez Moi</h4>
+                        <p>0758864201</p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <h4>Adresse</h4>
+                        <p>33 rue Ernest Thierry Mieg, Belfort</p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>asmbodj@hotmail.com</p>
+                    </div>
+                </div>
+        
+                <h3 class="contact-title padd-15">ENVOYEZ MOI UN MESSAGE</h3>
+                <h4 class="contact-sub-title padd-15">JE VOUS RÉPONDRAI DANS LES PLUS BREFS DÉLAIS</h4>
+        
+                <div class="row">
+                    <div class="container">
+                        <div class="contact-form padd-15">
+                            <form action="send_email.php" method="POST">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Nom" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="subject" class="form-control" placeholder="Sujet" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn">Envoyez un message</button>
+                                    </div>
+                                </div>
+                            </form>
+        
+                            <p id="responseMessage"></p> <!-- Message de confirmation -->
+        
+                            <!-- Icônes réseaux sociaux -->
+                            <div class="row padd-15" style="justify-content: center; margin-top: 30px;">
+                                <a href="https://www.linkedin.com/in/amadou-sow-mbodj-19b505260/" target="_blank" class="social-icon" style="margin: 0 10px; font-size: 24px; color: #0077b5;">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/asmbodji" target="_blank" class="social-icon" style="margin: 0 10px; font-size: 24px; color: #333;">
+                                    <i class="fa fa-github"></i>
+                                </a>
                             </div>
-                            
+        
                         </div>
-                        
                     </div>
                 </div>
             </div>
-           </section>
-
-              <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contactez Moi</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">Avez vous des Questions ?</h3>
-                    <h4 class="contact-sub-title padd-15">JE SUIS À VOTRE SERVICE</h4>
-                    <div class="row">
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Apellez moi sur</h4>
-                            <p>+33758864201</p>
-                        </div>
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-map-marker"></i></div>
-                            <h4>Adresse </h4>
-                            <p>20 rue Numa baragnon, Nimes</p>
-                        </div>
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p>asmbodj@hotmail.com</p>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">ENVOYEZ MOI UN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15>JE VOUS REPONDREZ SOUS LES BREVES DELAI</h4>
-                    <div class="row">
-                        <div class="container">
-                            <div class="contact-form padd-15">
-                                    <div class="row">
-                                        <div class="form-item col-6 padd-15">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Nom">
-                                            </div>
-                                        </div>
-                                        <div class="form-item col-6 padd-15">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Email">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-item col-12 padd-15">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Sujet">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-item col-12 padd-15">
-                                            <div class="form-group">
-                                                <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-item col-12 padd-15">
-                                         <button type="submit" class="btn">Envoyez un message</button>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </section>
+        </section>
+        
+        
        </div>
     </div>
 
@@ -421,5 +565,112 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js"></script>
 <script src="style-switcher.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+    // Initialisation de la carte
+    const map = L.map('map').setView([14.6928, -17.4467], 5); // Vue centrée sur Dakar
+  
+    // Fond de carte (tiles)
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap',
+      maxZoom: 18
+    }).addTo(map);
+  
+    // Liste des écoles avec coordonnées
+    const schools = [
+      {
+        name: "Université de Nîmes 🇫🇷",
+        location: [43.8375, 4.3601]
+      },
+      {
+        name: "Université Marie & Louis Pasteur 🇫🇷",
+        location: [47.510356, 6.798466] // Exemple Strasbourg
+      },
+      {
+        name: "École Supérieure Multinationale de Télécom 🇸🇳",
+        location: [14.7136, -17.4545]
+      },
+      {
+        name: "Centre de Formation Sénégal-Japon 🇸🇳",
+        location: [14.7273, -17.4708]
+      }
+    ];
+  
+    // Ajout des marqueurs sur la carte
+    schools.forEach(school => {
+      L.marker(school.location)
+        .addTo(map)
+        .bindPopup(`<b>${school.name}</b>`)
+        .openPopup(); 
+    });
+  </script>
+  <!-- POPUP -->
+<div id="portfolio-popup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <img id="popup-image" src="" alt="Aperçu du projet">
+        <h3 id="popup-title">Titre du projet</h3>
+        <p id="popup-description">Description détaillée du projet à venir ici.</p>
+    </div>
+</div>
+
+<script>
+    const popup = document.getElementById("portfolio-popup");
+    const popupImage = document.getElementById("popup-image");
+    const popupTitle = document.getElementById("popup-title");
+    const popupDescription = document.getElementById("popup-description");
+
+    function openPopup(button) {
+    const imageSrc = button.getAttribute("data-image");
+    const title = button.getAttribute("data-title");
+
+    popupImage.src = imageSrc;
+    popupTitle.innerText = title;
+
+    const descriptions = {
+        "Mon projet BTS : Réalisation d'un site web e-commerce pour une entreprise":
+            "Site complet de vente en ligne avec panier, compte client, espace admin et base de données MySQL.",
+        "Mon projet Master: Application mobile de prise de rendez-vous en ligne":
+            "App Flutter permettant aux utilisateurs de réserver un créneau horaire dans des hôtels ou services.",
+        "Description : Développement de système de métrologie basés sur Halcon":
+            "Conception d’un système de métrologie pour le contrôle dimensionnel de pièces industrielles à l’aide du logiciel Halcon. Mise en place de scripts Halcon pour l’analyse d’images et l’identification des défauts.",
+        "Description : GreenQuest, jeux interactifs sur la protection de l'environnement (en cours)":
+            "Jeu éducatif éco-responsable développé sous Unity avec des graphismes de dessin animé. Le joueur utilise des figurines pour jouer sur un plateau de jeu en résolvant des énigmes afin d'apprendre des concepts écologiques."
+    };
+
+    popupDescription.innerText = descriptions[title] || "Description à venir.";
+
+    popup.style.display = "flex";
+}
+
+
+    function closePopup() {
+        popup.style.display = "none";
+    }
+</script>
+<script>
+    // Pour la section Diplôme
+    document.getElementById('toggle-diplome')?.addEventListener('click', () => {
+        const box = document.getElementById('diplome-box');
+        box.classList.toggle('show');
+        document.getElementById('toggle-diplome').innerHTML =
+            box.classList.contains('show') ? "Masquer ▲" : "Afficher ▼";
+    });
+
+    // Pour la section Formation
+    document.getElementById('toggle-formation')?.addEventListener('click', () => {
+        const box = document.getElementById('formation-box');
+        box.classList.toggle('show');
+        document.getElementById('toggle-formation').innerHTML =
+            box.classList.contains('show') ? "Masquer ▲" : "Afficher ▼";
+    });
+</script>
+
+
+
+
 </body>
 </html>
